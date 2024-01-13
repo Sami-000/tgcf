@@ -12,4 +12,4 @@ def main():
     os.environ["STREAMLIT_THEME_BASE"] = CONFIG.theme
     os.environ["STREAMLIT_BROWSER_GATHER_USAGE_STATS"] = "false"
     os.environ["STREAMLIT_SERVER_HEADLESS"] = "true"
-    os.system(f"streamlit run {path}")
+    os.system(f"streamlit run {path} --server.port 7860")
